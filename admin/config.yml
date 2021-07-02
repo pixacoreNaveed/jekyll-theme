@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: pixacoreNaveed/jekyll-theme
+
+media_folder: "assets/images/uploads"
+
+collections:
+  - name: "Banner"
+    label: "Banner"
+    files:
+      - label: "Banner Text"
+        name: "site"
+        file: "_data/defaults.yml"
+        fields:
+          - label: "Banne Text"
+            name: "heading"
+            widget: string

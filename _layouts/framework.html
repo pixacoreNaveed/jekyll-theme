@@ -10,6 +10,7 @@ layout: default
   </section>
   <section class="sidebar" style="margin-left: 15px;">
     <!-- Get sidebar items -->
+    {% comment %}
     {%- if page.sidebar -%}
       {%- assign sidebar = page.sidebar -%}
     {%- elsif site.defaults[page.layout].sidebar -%}
@@ -31,5 +32,6 @@ layout: default
       {%- include {{ file }} %}
 
     {%- endfor -%}
+    {% endcomment %}
   </section>
 </div>
